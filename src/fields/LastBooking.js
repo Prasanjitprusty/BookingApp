@@ -5,7 +5,7 @@ export default function LastBooking() {
     const [lastBooking, setLastBooking] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8000/api/v1/users")
+        fetch("https://bookmyshow-backend-krge.onrender.com/api/v1/users")
             .then((response) => response.json())
             .then((data) => setLastBooking(data))
             .catch((error) => {

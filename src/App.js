@@ -16,7 +16,7 @@ function App() {
       return;
     }
 
-    fetch("http://localhost:8000/api/v1/newUser", {
+    fetch("https://bookmyshow-backend-krge.onrender.com/api/v1/newUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
